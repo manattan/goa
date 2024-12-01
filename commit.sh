@@ -5,7 +5,7 @@ resultPath="/tmp/$(uuidgen).txt"
 
 bash ./diff.sh > $filePath
 
-go run main.go -f $filePath > $resultPath
+./main -f $filePath > $resultPath
 
 git commit -m "$(cat $resultPath)"
 
