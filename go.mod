@@ -1,4 +1,4 @@
-module manattan.com/goa
+module github.com/manattan/goa
 
 go 1.23.3
 
