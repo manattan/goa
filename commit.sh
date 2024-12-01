@@ -3,9 +3,9 @@
 filePath="/tmp/$(uuidgen).diff"
 resultPath="/tmp/$(uuidgen).txt"
 
-bash ./diff.sh > $filePath
+bash ~/sandbox/goa/diff.sh > $filePath
 
-./main -f $filePath > $resultPath
+~/sandbox/goa/main -f $filePath > $resultPath
 
 git commit -m "$(cat $resultPath)"
 
